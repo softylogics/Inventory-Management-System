@@ -89,7 +89,7 @@ INNER JOIN sale ON model.model_id = sale.model_id]]>
 			</staticText>
 			<image>
 				<reportElement x="278" y="0" width="298" height="68" uuid="a0924622-59ca-4e9a-8375-901904917227"/>
-				<imageExpression><![CDATA["D:\\My Projects\\uni Project\\Database\\Reports\\leaf_banner_violet.png"]]></imageExpression>
+				<imageExpression><![CDATA["Reports\\leaf_banner_violet.png"]]></imageExpression>
 			</image>
 		</band>
 	</title>

@@ -367,14 +367,14 @@ private void categorycombobox(){
 
     private void searchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_searchActionPerformed
         try{
-            JasperDesign jd = JRXmlLoader.load("D:\\My Projects\\uni Project\\Database\\Reports\\sales.jrxml");
+            JasperDesign jd = JRXmlLoader.load("Reports\\sales.jrxml");
             String sql = "SELECT category.category_name, item.item_name, model.model_no, sale.voucher_no, sale.date_sale, sale.customer_name,"
                     + "sale.qty_sale, model.sale_price, sale.discount, sale.total_bill "
                     + "FROM "
                     + "category INNER JOIN item ON category.category_id = item.category_id"
                     + " INNER JOIN model ON item.item_id = model.item_id "
                     + "INNER JOIN sale ON model.model_id = sale.model_id "
-            + "where sale.date_sale = '"+cal.getText()+"' ";
+            + "where sale.date_sale >= '"+cal.getText()+"' ";
             JRDesignQuery newQuery = new JRDesignQuery();
             newQuery.setText(sql);
             jd.setQuery(newQuery);
@@ -393,7 +393,7 @@ private void categorycombobox(){
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         try{
-            JasperDesign jd = JRXmlLoader.load("D:\\My Projects\\uni Project\\Database\\Reports\\sales.jrxml");
+            JasperDesign jd = JRXmlLoader.load("Reports\\sales.jrxml");
             String sql = "SELECT category.category_name, item.item_name, model.model_no, sale.voucher_no, sale.date_sale, sale.customer_name,"
                     + "sale.qty_sale, model.sale_price, sale.discount, sale.total_bill "
                     + "FROM "
@@ -423,7 +423,7 @@ private void categorycombobox(){
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
          try{
-            JasperDesign jd = JRXmlLoader.load("D:\\My Projects\\uni Project\\Database\\Reports\\sales.jrxml");
+            JasperDesign jd = JRXmlLoader.load("Reports\\sales.jrxml");
             String sql = "SELECT category.category_name, item.item_name, model.model_no, sale.voucher_no, sale.date_sale, sale.customer_name,"
                     + "sale.qty_sale, model.sale_price, sale.discount, sale.total_bill "
                     + "FROM "
@@ -472,7 +472,7 @@ private void categorycombobox(){
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
          try{
-            JasperDesign jd = JRXmlLoader.load("D:\\My Projects\\uni Project\\Database\\Reports\\sales.jrxml");
+            JasperDesign jd = JRXmlLoader.load("Reports\\sales.jrxml");
             String sql = "SELECT category.category_name, item.item_name, model.model_no, sale.voucher_no, sale.date_sale, sale.customer_name,"
                     + "sale.qty_sale, model.sale_price, sale.discount, sale.total_bill "
                     + "FROM "

@@ -177,8 +177,7 @@ INNER JOIN sale ON model.model_id = sale.model_id]]>
 			</textField>
 			<textField>
 				<reportElement style="Detail" x="483" y="15" width="69" height="15" uuid="01b8a665-06ff-4cb9-a106-b96c49e50152"/>
-				<textFieldExpression><![CDATA[$V{TOTAL}.floatValue() == $F{item_purchase_price} * $F{qty_sale}
-]]></textFieldExpression>
+				<textFieldExpression><![CDATA[$V{TOTAL}.floatValue() == $F{item_purchase_price} * $F{qty_sale}]]></textFieldExpression>
 			</textField>
 			<textField>
 				<reportElement style="Detail" x="276" y="16" width="69" height="15" uuid="0777acf1-768c-4dab-969c-e767ecafb2ad"/>
@@ -196,8 +195,7 @@ INNER JOIN sale ON model.model_id = sale.model_id]]>
 				<textElement>
 					<font fontName="Arial" size="12"/>
 				</textElement>
-				<textFieldExpression><![CDATA[a varibale Integer.equals($F{sale_price}*$F{qty_sale}-$F{discount})
-]]></textFieldExpression>
+				<textFieldExpression><![CDATA[a varibale Integer.equals($F{sale_price}*$F{qty_sale}-$F{discount})]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>

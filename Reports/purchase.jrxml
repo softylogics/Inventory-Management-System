@@ -78,7 +78,7 @@ INNER JOIN purchase ON model.model_id = purchase.model_id]]>
 				</textElement>
 				<text><![CDATA[Purchase Report]]></text>
 			</staticText>
-			<image>
+			<image onErrorType="Blank">
 				<reportElement x="276" y="0" width="299" height="68" uuid="4adb3d80-d1cb-4300-ad41-13cf579f049b"/>
 				<imageExpression><![CDATA["D:\\Software Dev\\Java\\Database\\Database\\Reports\\leaf_banner_green.png"]]></imageExpression>
 			</image>
